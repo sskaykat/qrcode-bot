@@ -11,7 +11,7 @@
 git clone https://github.com/sskaykat/qrcode-bot.git
 ```
 
-2.修改 `config.ini` 文件，把 `TOKEN` 替换成你自己的
+2.修改 `config.ini` 文件，把 `TOKEN` 替换
 
 ```
 [telegram]
