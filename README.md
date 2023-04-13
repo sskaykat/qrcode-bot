@@ -24,5 +24,19 @@ TOKEN = 5007260780:AAE************6DOCytU
 
 4.运行 `python qrcodebot.py` 或者 `python3 qrcodebot.py` 即可
 
+### 使用 `docker` 安装
+
+1.把代码打包成镜像
+
+```
+docker build -t qrcodebot:latest .
+```
+
+2.运行
+
+```
+docker run -d --name qrcodebot -v /localpath:/qrcode qrcodebot:latest
+```
+
 
 
