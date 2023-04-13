@@ -38,5 +38,20 @@ docker build -t qrcodebot:latest .
 docker run -d --name qrcodebot -v /localpath:/qrcode qrcodebot:latest
 ```
 
+### 使用 `docker-compose` 安装，创建 `docker-compose.yml` , 文件内容如下：
+
+```
+version: '3'
+services:
+  qrcodebot:
+    image: qrcodebot:latest
+    container_name: qrcodebot
+    volumes:
+      - /localpath:/qrcode
+    restart: always
+    detach: true
+```
+
+运行 `docker-compose up -d`
 
 
